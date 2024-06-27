@@ -12,7 +12,7 @@ export default class EVCar extends Car {
     return this._range;
   }
 
-  [cloneSymbol]() {
+  cloneCar() {
     return new Car(this._brand, this._motor, this._color);
   }
 }
