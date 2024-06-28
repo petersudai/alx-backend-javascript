@@ -1,5 +1,5 @@
 export default function createIteratorObject(report) {
-  const allEmployees = report.allEmployees;
+  const { allEmployees } = report;
   let employees = [];
 
   for (const department of Object.values(allEmployees)) {
@@ -15,8 +15,8 @@ export default function createIteratorObject(report) {
             return { value: employees[index++], done: false };
           }
           return { done: true };
-        }
+        },
       };
-    }
+    },
   };
 }
