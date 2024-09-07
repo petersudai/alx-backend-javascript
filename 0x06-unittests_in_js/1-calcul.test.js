@@ -18,7 +18,7 @@ describe('calculateNumber', () => {
     });
 
     it('should return 3 when rounding 5.6 and 2.1 and subtracting them', () => {
-      assert.strictEqual(calculateNumber('SUBTRACT', 5.6, 2.1), 3);
+      assert.strictEqual(calculateNumber('SUBTRACT', 5.6, 2.1), 4);
     });
   });
 
