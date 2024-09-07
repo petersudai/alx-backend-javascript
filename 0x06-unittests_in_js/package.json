@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "chai": "^5.1.1",
-    "mocha": "^10.7.3"
+    "eslint": "^8.57.0",
+    "mocha": "^10.7.3",
+    "sinon": "^18.0.0"
   },
   "author": "Peter Sudai",
   "license": "ISC"
