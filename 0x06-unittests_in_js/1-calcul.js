@@ -4,16 +4,15 @@ function calculateNumber(type, a, b) {
 
   if (type === 'SUM') {
     return roundedA + roundedB;
-  } else if (type === 'SUBTRACT') {
+  } if (type === 'SUBTRACT') {
     return roundedA - roundedB;
-  } else if (type === 'DIVIDE') {
+  } if (type === 'DIVIDE') {
     if (roundedB === 0) {
       return 'Error';
     }
     return roundedA / roundedB;
-  } else {
-    throw new Error('Invalid operation type');
   }
+  throw new Error('Invalid operation type');
 }
 
 module.exports = calculateNumber;

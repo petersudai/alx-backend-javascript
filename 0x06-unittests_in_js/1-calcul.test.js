@@ -1,8 +1,10 @@
+import { describe, it } from '@jest/globals';
+
 const assert = require('assert');
 const calculateNumber = require('./1-calcul');
 
 describe('calculateNumber', () => {
-  describe('SUM', () => {
+  describe('sUM', () => {
     it('should return 6 when rounding 1.4 and 4.5 and summing them', () => {
       assert.strictEqual(calculateNumber('SUM', 1.4, 4.5), 6);
     });
@@ -12,7 +14,7 @@ describe('calculateNumber', () => {
     });
   });
 
-  describe('SUBTRACT', () => {
+  describe('sUBTRACT', () => {
     it('should return -4 when rounding 1.4 and 4.5 and subtracting them', () => {
       assert.strictEqual(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
     });
@@ -22,7 +24,7 @@ describe('calculateNumber', () => {
     });
   });
 
-  describe('DIVIDE', () => {
+  describe('dIVIDE', () => {
     it('should return 0.2 when rounding 1.4 and 4.5 and dividing them', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
     });
@@ -32,7 +34,7 @@ describe('calculateNumber', () => {
     });
   });
 
-  describe('Invalid operation', () => {
+  describe('invalid operation', () => {
     it('should throw an error when an invalid operation is provided', () => {
       assert.throws(() => calculateNumber('INVALID', 1.4, 4.5), /Invalid operation type/);
     });
